@@ -1,0 +1,42 @@
+{
+  "name": "express-jwt",
+  "version": "1.0.0",
+  "description": "Basic express CRUD with authorization",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PH3487/express-crud.git"
+  },
+  "keywords": [
+    "express",
+    "basic",
+    "jsonwebtoken",
+    "jwt",
+    "crud"
+  ],
+  "author": "PH3487",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PH3487/express-crud/issues"
+  },
+  "homepage": "https://github.com/PH3487/express-crud#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.3",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.6.1",
+    "jest": "^29.7.0"
+  }
+}

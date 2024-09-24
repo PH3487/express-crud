@@ -1,0 +1,14 @@
+{
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "npm.enableScriptExplorer": true,
+    "npm-intellisense.scanDevDependencies": true,
+    "nodeModulesIntellisense.importDevDependencies": true,
+    "files.autoSave": "onWindowChange",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+  

@@ -1,0 +1,78 @@
+{
+    "info": {
+      "name": "Express JWT Auth",
+      "_postman_id": "12345678-90ab-cdef-1234-567890abcdef",
+      "description": "Postman collection for basic Express JWT authentication API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Auth",
+        "item": [
+          {
+            "name": "Login",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"testpassword\"\n}"
+              },
+              "url": {
+                "raw": "{{HOST}}/login",
+                "host": ["{{HOST}}"],
+                "path": ["login"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Register",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"username\": \"newuser\",\n    \"password\": \"newpassword\",\n    \"email\": \"user@example.com\"\n}"
+              },
+              "url": {
+                "raw": "{{HOST}}/register",
+                "host": ["{{HOST}}"],
+                "path": ["register"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Me",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{token}}"
+                }
+              ],
+              "url": {
+                "raw": "{{HOST}}/me",
+                "host": ["{{HOST}}"],
+                "path": ["me"]
+              }
+            },
+            "response": []
+          }
+        ]
+      }
+    ]
+  }
+  
