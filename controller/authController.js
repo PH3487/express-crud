@@ -2,14 +2,13 @@ const { validationResult } = require("express-validator");
 const { db } = require("./../utils/db");
 const { sign } = require("./../utils/jwt");
 const bcrypt = require("bcrypt");
+const { firstError } = require("../utils/exceptError");
 
 module.exports = {
   async login(req, res) {
     const v = validationResult(req);
     if (!v.isEmpty()) {
-      return res
-        .status(400)
-        .json({ success: false, message: v.array()[0].msg });
+      return firstError(res, v, 400);
     }
 
     const { username, password } = req.body;
@@ -44,9 +43,7 @@ module.exports = {
   async register(req, res) {
     const v = validationResult(req);
     if (!v.isEmpty()) {
-      return res
-        .status(400)
-        .json({ success: false, message: v.array()[0].msg });
+      return firstError(res, v, 400);
     }
 
     const { username, password } = req.body;
@@ -90,8 +87,7 @@ module.exports = {
       return res.status(200).json({
         success: true,
         message: "Authenticated successfully",
-        data: user,
-        user: {
+        data: {
           uid: user.uid,
           username: user.username,
         },

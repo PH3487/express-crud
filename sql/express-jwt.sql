@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 24, 2024 at 10:09 PM
+-- Generation Time: Sep 25, 2024 at 10:32 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `express-jwt`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `books`
+--
+
+CREATE TABLE `books` (
+  `book_id` int NOT NULL,
+  `book_author` int NOT NULL,
+  `book_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `book_description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `book_price` decimal(11,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`book_id`, `book_author`, `book_name`, `book_description`, `book_price`) VALUES
+(2, 1, 'Rapter2', 'Dsc rapter2', '25.00'),
+(3, 1, 'Rapter3', 'Dsc rapter3', '35.00'),
+(4, 1, 'Rapter4', 'Dsc rapter4', '45.00'),
+(5, 1, 'Rapter5', 'Dsc rapter5', '55.00'),
+(6, 1, 'Rapter6', 'Description rapter6', '65.00');
 
 -- --------------------------------------------------------
 
@@ -45,6 +70,13 @@ INSERT INTO `users` (`uid`, `username`, `password`) VALUES
 --
 
 --
+-- Indexes for table `books`
+--
+ALTER TABLE `books`
+  ADD PRIMARY KEY (`book_id`),
+  ADD KEY `fk` (`book_author`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -55,10 +87,26 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `books`
+--
+ALTER TABLE `books`
+  MODIFY `book_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `uid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `books`
+--
+ALTER TABLE `books`
+  ADD CONSTRAINT `fk` FOREIGN KEY (`book_author`) REFERENCES `users` (`uid`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

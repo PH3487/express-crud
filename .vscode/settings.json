@@ -3,7 +3,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.formatOnSave": true,
     "eslint.alwaysShowStatus": true,
-    "npm.enableScriptExplorer": true,
     "npm-intellisense.scanDevDependencies": true,
     "nodeModulesIntellisense.importDevDependencies": true,
     "files.autoSave": "onWindowChange",

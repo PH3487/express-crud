@@ -37,7 +37,7 @@ describe("GET /me", () => {
       "message",
       "Authenticated successfully"
     );
-    expect(response.body.user).toHaveProperty("username", "newuser");
+    expect(response.body.data).toHaveProperty("username", "newuser");
   });
 
   it("should return 401 if no token provided", async () => {
