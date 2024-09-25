@@ -1,0 +1,11 @@
+### Key Sections Explained:
+
+1. **Project Description**: Provides an overview of the purpose of the project and key features.
+2. **Project Structure**: A visual guide to how the files are organized.
+3. **Getting Started**: Instructions to install and set up the project on a local machine, including environment variable setup.
+4. **API Endpoints**: Describes the available routes (e.g., `/auth/login`, `/auth/register`) and sample requests/responses.
+5. **Postman Collection**: A section explaining how to use the Postman collection.
+6. **Running Tests**: Describes how to run the unit tests.
+7. **License**: Provides licensing information if relevant.
+
+Feel free to modify it to suit your project!
