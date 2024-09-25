@@ -15,23 +15,26 @@ This is a simple Express.js application that implements basic user authenticatio
 ```
 📂 express-crud
 ├── 📂 controllers
-│   └── authController.js  # Handles login, registration, and user info
-│   └── booksController.js  # Handles CRUD operations for books
+│   └── authController.js                       # Handles login, registration, and user info
+│   └── booksController.js                      # Handles CRUD operations for books
 ├── 📂 middlewares
-│   └── auth.js            # JWT Authentication middleware
+│   └── auth.js                                 # JWT Authentication middleware
 ├── 📂 routes
-│   └── auth.js            # Auth-related routes (login, register, me)
-│   └── books.js           # Books-related routes (CRUD)
-│   └── index.js           # Main router that includes all routes
+│   └── auth.js                                 # Auth-related routes (login, register, me)
+│   └── books.js                                # Books-related routes (CRUD)
+│   └── index.js                                # Main router that includes all routes
 ├── 📂 sql
-│   └── express-jwt.sql    # SQL file
+│   └── express-jwt.sql                         # SQL file
 ├── 📂 utils
-│   └── db.js              # Database connection utility
-│   └── jwt.js             # JWT utility functions (sign, verify)
-├── .env                   # Environment variables
-├── app.js                 # Main Express application file
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation (this file)
+│   └── db.js                                   # Database connection utility
+│   └── jwt.js                                  # JWT utility functions (sign, verify)
+├── .env                                        # Environment variables
+├── .gitignore                                  # Gitignore file
+├── Express JWT Auth.postman_collection.json    # Postman collection
+├── index.js                                    # Main Express application file
+├── LICENSE                                     # License file
+├── package.json                                # Project dependencies and scripts
+└── README.md                                   # Project documentation (this file)
 ```
 
 ## Getting Started
