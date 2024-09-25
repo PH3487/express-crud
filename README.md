@@ -13,7 +13,7 @@ This is a simple Express.js application that implements basic user authenticatio
 ## Project Structure
 
 ```
-📂 express-jwt-auth
+📂 express-crud
 ├── 📂 controllers
 │   └── authController.js  # Handles login, registration, and user info
 │   └── booksController.js  # Handles CRUD operations for books
@@ -23,6 +23,8 @@ This is a simple Express.js application that implements basic user authenticatio
 │   └── auth.js            # Auth-related routes (login, register, me)
 │   └── books.js           # Books-related routes (CRUD)
 │   └── index.js           # Main router that includes all routes
+├── 📂 sql
+│   └── express-jwt.sql    # SQL file
 ├── 📂 utils
 │   └── db.js              # Database connection utility
 │   └── jwt.js             # JWT utility functions (sign, verify)
@@ -51,7 +53,7 @@ This is a simple Express.js application that implements basic user authenticatio
 2. Navigate to the project directory:
 
    ```bash
-   cd express-jwt-auth
+   cd express-crud
    ```
 
 3. Install the dependencies:
@@ -73,6 +75,7 @@ This is a simple Express.js application that implements basic user authenticatio
 
 5. Set up the MySQL database:
    - Create a MySQL database matching the name in `.env`.
+   - Import sql file from sql/express-jwt.sql
    - Run any necessary migrations or use your preferred database migration tool.
 
 ### Running the Application
@@ -89,7 +92,7 @@ The application will be running at: `http://localhost:3000`.
 
 A Postman collection is available for testing the API endpoints. You can import it by using the following steps:
 
-1. Import the `postman_collection.json` file (located in the project root) into Postman.
+1. Import the `Express JWT Auth.postman_collection.json` file (located in the project root) into Postman.
 2. Ensure that you set up the environment with the variable `HOST` set to `http://localhost:3000`.
 
 ### API Endpoints
