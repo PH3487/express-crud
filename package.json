@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "docker:build": "docker build -t ghcr.io/ph3487/express-crud:latest .",
+    "docker:push": "docker push ghcr.io/ph3487/express-crud:latest"
   },
   "repository": {
     "type": "git",
