@@ -2,6 +2,12 @@
 
 This is a simple Express.js application that implements basic user authentication using JSON Web Tokens (JWT). It includes features for user registration, login, and protected routes. The application uses MySQL as the database and bcrypt for password hashing.
 
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)](https://jwt.io/)
+
+
 ## Features
 
 - User Registration
