@@ -2,6 +2,15 @@
 
 This is a simple Express.js application that implements basic user authentication using JSON Web Tokens (JWT). It includes features for user registration, login, and protected routes. The application uses MySQL as the database and bcrypt for password hashing.
 
+## Project Overview
+1. [Feature](#features)
+2. [Project structure](#project-structure)
+3. [Getting started](#getting-started)
+4. [Running the application](#running-the-application)
+5. [Running tests](#running-tests)
+6. [Docker](#docker)
+7. [License](#license)
+
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
@@ -49,6 +58,7 @@ This is a simple Express.js application that implements basic user authenticatio
 
 - Node.js (v14.x or later)
 - MySQL Database
+- Docker (optional)
 - Postman (for API testing, optional)
 
 ### Installation
@@ -111,6 +121,12 @@ To run the tests using Jest and Supertest:
 ```bash
 npm test
 ```
+
+### Docker
+1. Install [Docker](https://docs.docker.com/get-docker/).
+2. Run `docker-compose up` to start the application.
+3. Access the API via Express.js on port 3000.
+4. The database is powered by MySQL, and JWT is used for securing routes.
 
 ### License
 
